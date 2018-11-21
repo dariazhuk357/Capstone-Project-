@@ -126,10 +126,26 @@ What about ‘Assault’?
 **Olympic district, Assault - left (Before 2013), right (after 2013)**
 ![Figure 13](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Assault%20Pie.png)
 
-**Hollywwod district, Assault - left (Before 2013), right (after 2013)**
+**Hollywood district, Assault - left (Before 2013), right (after 2013)**
 ![Figure 14](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Assault%20Pie.png)
 
-All four districts showed an increase in ‘Assault w/Deadly Weapon’ and ‘Rape and Sexual Assault/Battery’. 
+All five focus districts showed an increase in ‘Assault w/Deadly Weapon’ and ‘Rape and Sexual Assault/Battery’
+
+The most dangerous districts (77th Street and Southwest) had a steady crime rate throughout the years. What were the sub-categories of 'Robbery and Theft' there?
+
+**77th Street district, Robbery and Theft - left (Before 2013), right (after 2013)**
+![Figure 15](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/77th%20Robbery%20Pie.png)
+
+**Southwest district, Robbery and Theft - left (Before 2013), right (after 2013)**
+![Figure 16](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Southwest%20Robbery%20Pie.png)
+
+What about 'Assault'?
+
+**77th Street district, Assault - left (Before 2013), right (after 2013)**
+![Figure 17](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/77th%20Assault%20Pie%20.png)
+
+**Southwest district, Assault - left (Before 2013), right (after 2013)**
+![Figure 18](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Southwest%20Assault%20Pie%20.png) 
 
 Which premises contained the most crime and what crimes affected them the most?
 
@@ -153,27 +169,12 @@ Which premises contained the most crime and what crimes affected them the most?
 
 ![Figure 24](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Crime%20By%20Premise%20.png)
 
-What times are peak times of crime for the 4 districts?
+What times are peak times of crime for the focus districts?
 
-## EDA analysis 
+![Figure 25](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Crime%20Daily%20Trend.png) 
 
+From the above graph it can be seen that 12PM and 6PM-8PM are the peak crime times in almost all the focus districst and the two most dangerous districts in LA. 
 
-Were open investigations correlated with crime rise??? 
- 
-
-
-What is the distribution of the ‘Victim Age’? Are younger or older people more affected? 
-
- 
-
- 
-
-Younger people are affected by a wider variety of crimes but older people are more affected by ‘Robbery and Theft’. 
-
-Are females more affected than males? 
-
- 
-Females are more affected by a wider amount of crime, while males are more affected by ‘Robbery and Theft’. 
 
 ## Machine Learning
 
