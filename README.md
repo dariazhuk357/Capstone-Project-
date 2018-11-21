@@ -1,18 +1,36 @@
-# Capstone_Project_1
+# Analyzing LA Crime Data 
 
-The Capstone Project focuses on analyzing crime data from Los Angeles from 2010 to present. The data was obtained in csv and went through several pre-processing steps. 
+Th is repository is focused on analyzing and digging into crime data in Los Angeles from 2010 to present, as well as building a machine learning model capable of classifying a crime based on crime occurance. The data and its full variable description was obtained in the csv format from [this link](https://data.lacity.org/A-Safe-City/Crime-Data-from-2010-to-Present/y8tr-7khq). The data is continuously updated, therefore, the dataframe that was obtained at the link at the time of the project can be also accessed in this repo in [Files](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Files). The data frame went through Data Cleanining and Feature Engineering steps. The process for Data Cleaning and Feature Engineering steps can be accessed in this repo in [Data Cleaning](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Data%20Cleaning) and [Feature Engineering](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering), respectively. The same folders can be used to access the resulting cleaned and engineered dataframes in a partioned format, ready for download. The following pre-processed, [final data frame](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering/Final_Partitioned_DataFrame) was used for EDA and Machine Learning Purposes described in detail below.   
 
-## Datetime variables
+## Data Cleaning and Exploration
+# Unnecessary variables 
+The following variables were repeats of other variables or were deemed as unimportant for the purpose of this project and, therefore, dropped for simplicity and conciseness of the dataframe: 
 
-First, the ‘time’ variables were combined and converted into datatime format variable: ‘Date_Occurred_Time_Occurred’. In addition several more datetime features were created: ‘Time Occurred’ (in hours:minutes:seconds), ‘Date Occurred’ (day:month:year), ‘Hour’ (in hours), and ‘Minute’ (in minutes). The ‘Hour’ and ‘Minute’ variables were then used to make the sin and cos versions of hours and minutes for machine learning purposes: ‘Hour_sin’, ‘Hour_cos’, ‘Min_sin’, ‘Min_cos’. In addition, a categorical variable for time of day was created: ‘Time Code’.   
+- DR Number
+- Date Reported
+- Reporting District
+- MO Codes
+- Crime Code
+- Area ID 
+- Premise Code
+- Weapon Used Code
+- Status Code
+- Crime Code 1, Crime Code 2, Crime Code 3, Crime Code 4 
+- Address
+- Cross Street
 
-## Missing values and irrelevant variables 
+# Missing values and irrelevant variables 
 
-Variable ‘Weapon Description’ was missing more than 50% data and was, therefore, eliminated as a whole. Variables ‘Victim Sex’, ‘Victim Age’ and ‘Victim Descent’ had variable amount data missing that overall comprised about ¼ of total row-wise data. For data storytelling purposes, missing values for the listed 3 variables were replace with ‘Missing’ label. ‘Premise Description’ missing variables comprised less than 1% missing variables and therefore, those were easily dropped. 
+Variable ‘Weapon Description’ was missing more than 50% of the time, therefore, the variable was dropped completely.‘Premise Description’ missing values comprised less than 1% of the total dataframe were easily dropped. Variables ‘Victim Sex’, ‘Victim Age’ and ‘Victim Descent’ had variable amounts of data missing that overall comprised to approximately ¼ of total dataframe. For data storytelling purposes, the missing values for those 3 variables were replaced with a ‘Missing’ label.  
 
-## Additional feature engineering  
+## Feature Engineering 
+# Datetime variables
 
-‘Crime Code Description’ variable was very segmented and was grouped together to form a more general variable ‘Crime’ which combined similar crimes like ‘Robbery’ and ‘Theft, Person’ together into a single category ‘Robbery and Theft’. Another variable ‘Crime Detailed’ was created adding back some information to the ‘Crime’ variable to be able to see more insight into the types of general labels (ex. the types of ‘Robbery and Theft’). 
+The variables 'Date Occurred' and 'Time Occurred' in the original dataframe were parsed and combined into a datatime format variable: ‘Date_Occurred_Time_Occurred’. In addition several more datetime features were created: ‘Time Occurred’ (in hours:minutes:seconds), ‘Date Occurred’ (day:month:year), ‘Hour’ (in hours), and ‘Minute’ (in minutes). The ‘Hour’ and ‘Minute’ variables were then used to make the sin and cos versions of hours and minutes for machine learning purposes: ‘Hour_sin’, ‘Hour_cos’, ‘Min_sin’, ‘Min_cos’.    
+
+# Additional feature engineering  
+
+‘Crime Code Description’ variable was highly segmented with more than 140 unique labels and was,therefore, grouped together to form a more general variable ‘Crime’ which combined similar crimes like ‘Robbery’ and ‘Theft, Person’ together into a single category ‘Robbery and Theft’. Another variable ‘Crime Detailed’ was created by segmenting the ‘Crime’ variable for the insight into the types of general labels: eg. 'Robbery and Theft' was segmented into 'Grand Theft', 'Petty Theft' and etc. Automation of the creation of these variables was not possible due to extreme variability in the wording of the 'Crime Code Description' labels. Therefore, the variables were generated through using hardcoding techniques that would otherwise be avoided.   
 
 ## Yearly Crime Trends
 
@@ -41,13 +59,23 @@ What were the main sub-categories of ‘Robbery and Theft’? Did some of them g
 
 ![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Assault%20Pie.png)
 
- 
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Robbery%20Pie.png)
 
- 
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Assault%20Pie.png)
 
- 
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Robbery%20Pie.png)
 
- 
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Assault%20Pie.png)
+
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Robbery%20Pie.png)
+
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Assault%20Pie.png)
+
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Robbery%20Pie.png)
+
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Assault%20Pie.png)
+
+
 
 All districts seemed to have an increase in ‘Theft/Burglary From a Vehicle’, but overall showed no specific crime rise in the sub-categories of ‘Robbery and Theft’. 
 
