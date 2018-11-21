@@ -22,16 +22,24 @@ Yearly crime trend was examined for all the districts contained in the dataset
 
 77th Street and Southwest districts were found to have the most crime in LA from 2010 to 2017 (2018 was omitted since it did not contain full year information). 
 
- 
-
 4 districts were particularly interesting, since they portrayed constant increase in crime from around 2013: ‘Newton’, ‘Olympic’, ‘Central’, ‘Hollenbeck’.Foothill district was interesting in terms of portraying a decrease in crime, but was ignored in further data exploration due to a comeback in crime after 2014. 
+
+
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Regions%20With%20Increasing%20and%20Decreasing%20Crime.png)
 
 What kind of crimes populated those 4 districts? 
   
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Detailed%20Crime%20Count%202.png)
+
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Detailed%20Crime%20Count%201.png)
 
 ‘Robbery and Theft’ and ‘Assault’ were the biggest contributors for all the 4 districts, with ‘Sex-Related  Crime’ coming in third place. Moreover, the trend in ‘Robbery and Theft’ and ‘Assault’ crimes mimicked the overall crime rise, signifying that those two crime categories were the main drivers of crime rise. 
 
 What were the main sub-categories of ‘Robbery and Theft’? Did some of them grow after 2013? 
+
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Robbery%20Pie.png)
+
+![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Assault%20Pie.png)
 
  
 
