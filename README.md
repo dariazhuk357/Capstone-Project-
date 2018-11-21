@@ -1,9 +1,12 @@
 # Analyzing LA Crime Data 
 
-Th is repository is focused on analyzing and digging into crime data in Los Angeles from 2010 to present, as well as building a machine learning model capable of classifying a crime based on crime occurance. The data and its full variable description was obtained in the csv format from [this link](https://data.lacity.org/A-Safe-City/Crime-Data-from-2010-to-Present/y8tr-7khq). The data is continuously updated, therefore, the dataframe that was obtained at the link at the time of the project can be also accessed in this repo in [Files](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Files). The data frame went through Data Cleanining and Feature Engineering steps. The process for Data Cleaning and Feature Engineering steps can be accessed in this repo in [Data Cleaning](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Data%20Cleaning) and [Feature Engineering](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering), respectively. The same folders can be used to access the resulting cleaned and engineered dataframes in a partioned format, ready for download. The following pre-processed, [final data frame](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering/Final_Partitioned_DataFrame) was used for EDA and Machine Learning Purposes described in detail below.   
+This repository is focused on analyzing and digging into crime data in Los Angeles from 2010 to present, as well as building a machine learning model capable of classifying a crime based on crime occurance. The data and its full variable description was obtained in the csv format from [this link](https://data.lacity.org/A-Safe-City/Crime-Data-from-2010-to-Present/y8tr-7khq). The data is continuously updated, therefore, the dataframe that was obtained at the link at the time of the project can be also accessed in this repo in [Files](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Files). The data frame went through Data Cleanining and Feature Engineering steps. The process for Data Cleaning and Feature Engineering steps can be accessed in this repo in [Data Cleaning](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Data%20Cleaning) and [Feature Engineering](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering), respectively. The same folders can be used to access the resulting cleaned and engineered dataframes in a partioned format, ready for download. The following pre-processed, [final data frame](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering/Final_Partitioned_DataFrame) was used for [EDA](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/EDA) and [Machine Learning](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Machine%20Learning) purposes described in detail below.   
 
-## Data Cleaning and Exploration
-# Unnecessary variables 
+# Data Cleaning and Exploration
+
+Find the following work here [Data Cleaning](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Data%20Cleaning)
+
+### Unnecessary variables 
 The following variables were repeats of other variables or were deemed as unimportant for the purpose of this project and, therefore, dropped for simplicity and conciseness of the dataframe: 
 
 - DR Number
@@ -19,82 +22,136 @@ The following variables were repeats of other variables or were deemed as unimpo
 - Address
 - Cross Street
 
-# Missing values and irrelevant variables 
+### Missing values and irrelevant variables 
 
 Variable ‘Weapon Description’ was missing more than 50% of the time, therefore, the variable was dropped completely.‘Premise Description’ missing values comprised less than 1% of the total dataframe were easily dropped. Variables ‘Victim Sex’, ‘Victim Age’ and ‘Victim Descent’ had variable amounts of data missing that overall comprised to approximately ¼ of total dataframe. For data storytelling purposes, the missing values for those 3 variables were replaced with a ‘Missing’ label.  
 
-## Feature Engineering 
-# Datetime variables
+# Feature Engineering 
+
+Find the following work here [Feature Engineering](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering)
+
+### Datetime variables
 
 The variables 'Date Occurred' and 'Time Occurred' in the original dataframe were parsed and combined into a datatime format variable: ‘Date_Occurred_Time_Occurred’. In addition several more datetime features were created: ‘Time Occurred’ (in hours:minutes:seconds), ‘Date Occurred’ (day:month:year), ‘Hour’ (in hours), and ‘Minute’ (in minutes). The ‘Hour’ and ‘Minute’ variables were then used to make the sin and cos versions of hours and minutes for machine learning purposes: ‘Hour_sin’, ‘Hour_cos’, ‘Min_sin’, ‘Min_cos’.    
 
-# Additional feature engineering  
+### Additional feature engineering  
 
 ‘Crime Code Description’ variable was highly segmented with more than 140 unique labels and was,therefore, grouped together to form a more general variable ‘Crime’ which combined similar crimes like ‘Robbery’ and ‘Theft, Person’ together into a single category ‘Robbery and Theft’. Another variable ‘Crime Detailed’ was created by segmenting the ‘Crime’ variable for the insight into the types of general labels: eg. 'Robbery and Theft' was segmented into 'Grand Theft', 'Petty Theft' and etc. Automation of the creation of these variables was not possible due to extreme variability in the wording of the 'Crime Code Description' labels. Therefore, the variables were generated through using hardcoding techniques that would otherwise be avoided.   
 
-## Yearly Crime Trends
+# Exploratory Data Analysis 
 
-Yearly crime trend was examined for all the districts contained in the dataset
+Find the following work here [EDA](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/EDA)
+The processed dataframe can be found here: [final data frame](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering/Final_Partitioned_DataFrame).
+
+The final cleaned and engineered dataframe contained the following variables with their descriptions: 
+
+   - Date Occurred_Time Occurred - Time and date of crime occurance 
+   - Area Name - District where crime occurred 
+   - Crime Code Description - Crime label 
+   - Victim Age - Age of the victim 
+   - Victim Sex - Sex of the victim 
+   - Victim Descent - Descent of the victim 
+   - Premise Description - Description of the premise where the crime occurred 
+   - Status Description - The status of the investigation on the crime 
+   - Location - Longitude and Latitude coordinates of the crime location 
+   - Date Occurred - Date of the crime occurrance 
+   - Time Occurred - Time of the crime occurrance 
+   - Hour - Hour of the crime occurrance 
+   - Minute - Minute of the crime occurrance 
+   - Day_of_Month - Day of the month of crime occurrance 
+   - Month - Month of crime occurance 
+   - Hour_sin - sin convertion of the hour of crime occurrance 
+   - Hour_cos - cos convertion of the hour of crime occurrance 
+   - Min_sin - sin convertion of the min of crime occurrance 
+   - Min_cos - cos convertion of the min of crime occurrance 
+   - Day_sin - sin convertion of the day of crime occurrance 
+   - Day_cos - cos convertion of the day of crime occurrance 
+   - Month_sin - sin convertion of the month of crime occurrance 
+   - Month_cos - cos convertion of the month of crime occurrance 
+   - Crime - Grouped, general version of 'Crime Code Description' (see Feature Engineering section for details)  
+   - Crime_Detailed - Grouped, less general version of 'Crime' (see Feature Engineering section for details)  
+
+### Yearly Crime Trends
+
+Yearly crime trends were examined for all the districts contained in the dataset
 
 ![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/LA%20Crime%20Rate%20by%20District.png)
 
-77th Street and Southwest districts were found to have the most crime in LA from 2010 to 2017 (2018 was omitted since it did not contain full year information). 
+77th Street and Southwest districts were found to have the most crime in LA from 2010 to 2017 (2018 was omitted due to incompleteness). 
 
-4 districts were particularly interesting, since they portrayed constant increase in crime from around 2013: ‘Newton’, ‘Olympic’, ‘Central’, ‘Hollenbeck’.Foothill district was interesting in terms of portraying a decrease in crime, but was ignored in further data exploration due to a comeback in crime after 2014. 
+Additionally, 5 other districts (will be called 'focus districts' for the rest of this document) were particularly interesting. These districts portrayed a constant increase in crime starting from 2013: ‘Newton’, ‘Olympic’, ‘Central’, ‘Hollenbeck’, and 'Hollywood'. 'Foothill' district was interesting in terms of portraying a decrease in crime before 2014, but was ignored in further data exploration due to a spike in crime after 2014.
 
+![Figure 2](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Regions%20With%20Increasing%20and%20Decreasing%20Crime.png)
 
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Regions%20With%20Increasing%20and%20Decreasing%20Crime.png)
-
-What kind of crimes populated those 4 districts? 
+What kind of crimes populated focus districts? 
   
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Detailed%20Crime%20Count%202.png)
+![Figure 3](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Detailed%20Crime%20Count%202.png)
 
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Detailed%20Crime%20Count%201.png)
+What kind of crimes populated the two most dangerous districts in LA? 
 
-‘Robbery and Theft’ and ‘Assault’ were the biggest contributors for all the 4 districts, with ‘Sex-Related  Crime’ coming in third place. Moreover, the trend in ‘Robbery and Theft’ and ‘Assault’ crimes mimicked the overall crime rise, signifying that those two crime categories were the main drivers of crime rise. 
+![Figure 4](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Detailed%20Crime%20Count%201.png)
 
-What were the main sub-categories of ‘Robbery and Theft’? Did some of them grow after 2013? 
+‘Robbery and Theft’ and ‘Assault’ were the biggest contributors in all focus districs, with ‘Sex-Related Crime’ in third place. Moreover, the trend in ‘Robbery and Theft’ and ‘Assault’ crimes mimicked the overall crime rise trend, signifying that those two crime categories could be the main drivers of crime rise. 
 
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Robbery%20Pie.png)
+What were the main sub-categories of ‘Robbery and Theft’ in each of the focus districts? Crime in those districts began to spike after 2013. Did some of those sub-categories grow after 2013? 
 
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Assault%20Pie.png)
+**Central district, Robbery and Theft - left (Before 2013), right (after 2013)**
+![Figure 5](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Robbery%20Pie.png)
 
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Robbery%20Pie.png)
+**Hollenbeck district, Robbery and Theft - left (Before 2013), right (after 2013)**
+![Figure 6](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Robbery%20Pie.png)
 
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Assault%20Pie.png)
+**Newton district, Robbery and Theft - left (Before 2013), right (after 2013)**
+![Figure 7](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Robbery%20Pie.png)
 
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Robbery%20Pie.png)
+**Olympic district, Robbery and Theft - left (Before 2013), right (after 2013)**
+![Figure 8](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Robbery%20Pie.png)
 
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Assault%20Pie.png)
-
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Robbery%20Pie.png)
-
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Assault%20Pie.png)
-
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Robbery%20Pie.png)
-
-![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Assault%20Pie.png)
-
-
+**Hollywood district, Robbery and Theft - left (Before 2013), right (after 2013)**
+![Figure 9](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Robbery%20Pie.png)
 
 All districts seemed to have an increase in ‘Theft/Burglary From a Vehicle’, but overall showed no specific crime rise in the sub-categories of ‘Robbery and Theft’. 
 
 What about ‘Assault’? 
  
-
+**Central district, Assault - left (Before 2013), right (after 2013)**
+![Figure 10](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Assault%20Pie.png)
  
- 
+**Hollenbeck district, Assault - left (Before 2013), right (after 2013)**
+![Figure 11](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Assault%20Pie.png)
 
- 
+**Newton district, Assault - left (Before 2013), right (after 2013)**
+![Figure 12](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Assault%20Pie.png)
 
+**Olympic district, Assault - left (Before 2013), right (after 2013)**
+![Figure 13](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Assault%20Pie.png)
+
+**Hollywwod district, Assault - left (Before 2013), right (after 2013)**
+![Figure 14](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Assault%20Pie.png)
 
 All four districts showed an increase in ‘Assault w/Deadly Weapon’ and ‘Rape and Sexual Assault/Battery’. 
 
-Which premises were most affected by what crime? 
+Which premises contained the most crime and what crimes affected them the most?
 
- 
+![Figure 15](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20District%20Most%20Common%20Crime%20Premises.png)
 
- 
+![Figure 16](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Crime%20By%20Premise%20.png)
+
+![Figure 17](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20District%20Most%20Common%20Crime%20Premises.png)
+
+![Figure 18](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Crime%20By%20Premise%20.png)
+
+![Figure 19](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20District%20Most%20Common%20Crime%20Premises.png)
+
+![Figure 20](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Crime%20By%20Premise%20.png)
+
+![Figure 21](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20District%20Most%20Common%20Crime%20Premises.png)
+
+![Figure 22](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Crime%20By%20Premise%20.png)
+
+![Figure 23](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20District%20Most%20Common%20Crime%20Premises.png)
+
+![Figure 24](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Crime%20By%20Premise%20.png)
 
 What times are peak times of crime for the 4 districts?
 
