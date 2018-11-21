@@ -18,7 +18,7 @@ Variable ‘Weapon Description’ was missing more than 50% data and was, theref
 
 Yearly crime trend was examined for all the districts contained in the dataset 
 
- ![Figure 1.](/Users/dasha/Documents/Pictures/LA Crime Rate by District.png)
+    ![Figure 1.](/Users/dasha/Documents/Pictures/LA Crime Rate by District.png)
 
 77th Street and Southwest districts were found to have the most crime in LA from 2010 to 2017 (2018 was omitted since it did not contain full year information). 
 
