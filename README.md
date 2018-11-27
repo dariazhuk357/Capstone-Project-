@@ -95,26 +95,11 @@ What kind of crimes populated the two most dangerous districts in LA?
 
 What were the main sub-categories of ‘Robbery and Theft’ in each of the focus districts? Crime in those districts began to spike after 2013. Did some of those sub-categories grow after 2013? 
 
-All districts seemed to have an increase in ‘Theft/Burglary From a Vehicle’, but overall showed no specific crime rise in the sub-categories of ‘Robbery and Theft’. See the images here. 
+All districts seemed to have an increase in ‘Theft/Burglary From a Vehicle’, but overall showed no specific crime rise in the sub-categories of ‘Robbery and Theft’. See the images here: ['Focus Districts 'Robbery and Theft' Pie Charts'](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/EDA/Focus%20Districts%20'Robbery%20and%20Theft'%20Pie%20Charts.md) 
 
 What about ‘Assault’? 
- 
-**Central district, Assault - left (Before 2013), right (after 2013)**
-![Figure 10](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Assault%20Pie.png)
- 
-**Hollenbeck district, Assault - left (Before 2013), right (after 2013)**
-![Figure 11](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Assault%20Pie.png)
 
-**Newton district, Assault - left (Before 2013), right (after 2013)**
-![Figure 12](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Assault%20Pie.png)
-
-**Olympic district, Assault - left (Before 2013), right (after 2013)**
-![Figure 13](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Assault%20Pie.png)
-
-**Hollywood district, Assault - left (Before 2013), right (after 2013)**
-![Figure 14](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Assault%20Pie.png)
-
-All five focus districts showed an increase in ‘Assault w/Deadly Weapon’ and ‘Rape and Sexual Assault/Battery’
+All five focus districts showed an increase in ‘Assault w/Deadly Weapon’ and ‘Rape and Sexual Assault/Battery’. See the images here: ['Focus Districts 'Assault' Pie Charts'](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/EDA/Focus%20Districts%20'Assault'%20Pie%20Charts.md) 
 
 The most dangerous districts (77th Street and Southwest) had a steady crime rate throughout the years. What were the sub-categories of 'Robbery and Theft' there?
 
