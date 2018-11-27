@@ -149,23 +149,13 @@ What about 'Assault'?
 
 Which premises contained the most crime and what crimes affected them the most?
 
-![Figure 15](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20District%20Most%20Common%20Crime%20Premises.png)
-
 ![Figure 16](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Crime%20By%20Premise%20.png)
-
-![Figure 17](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20District%20Most%20Common%20Crime%20Premises.png)
 
 ![Figure 18](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Crime%20By%20Premise%20.png)
 
-![Figure 19](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20District%20Most%20Common%20Crime%20Premises.png)
-
 ![Figure 20](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Crime%20By%20Premise%20.png)
 
-![Figure 21](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20District%20Most%20Common%20Crime%20Premises.png)
-
 ![Figure 22](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Crime%20By%20Premise%20.png)
-
-![Figure 23](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20District%20Most%20Common%20Crime%20Premises.png)
 
 ![Figure 24](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Crime%20By%20Premise%20.png)
 
@@ -208,7 +198,7 @@ Multiple machine learning models were fit: DecisionTreeClassifier, ExtraTreesCla
 
 The model with the stated parameters yeilded an ROC score of ~73 % with the the ROC curve below: 
 
-[!Figure 26](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Images/ROC%20curve%20.png)
+![Figure 26](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Images/ROC%20curve%20.png)
 
 To further imporve accuracy of the model addition of more descriptive features might be necessary. This can be accomplished by merging the original dataframe with additional datatables. This will be the future work. 
 
