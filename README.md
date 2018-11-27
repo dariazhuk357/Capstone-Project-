@@ -101,21 +101,8 @@ What about ‘Assault’?
 
 All five focus districts showed an increase in ‘Assault w/Deadly Weapon’ and ‘Rape and Sexual Assault/Battery’. See the images here: ['Focus Districts 'Assault' Pie Charts'](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/EDA/Focus%20Districts%20'Assault'%20Pie%20Charts.md) 
 
-The most dangerous districts (77th Street and Southwest) had a steady crime rate throughout the years. What were the sub-categories of 'Robbery and Theft' there?
+The most dangerous districts (77th Street and Southwest) had a steady crime rate throughout the years. What were the sub-categories of 'Robbery and Theft' and 'Assault' there? See the charts here: ['Most Dangerous Districts 'Robbery and Theft', 'Assault' Pie Charts'](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/EDA/Most%20Dangerous%20Districts%20%20'Robbery%20and%20Theft'%2C%20'Assault'%20Pie%20Charts.md)
 
-**77th Street district, Robbery and Theft - left (Before 2013), right (after 2013)**
-![Figure 15](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/77th%20Robbery%20Pie.png)
-
-**Southwest district, Robbery and Theft - left (Before 2013), right (after 2013)**
-![Figure 16](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Southwest%20Robbery%20Pie.png)
-
-What about 'Assault'?
-
-**77th Street district, Assault - left (Before 2013), right (after 2013)**
-![Figure 17](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/77th%20Assault%20Pie%20.png)
-
-**Southwest district, Assault - left (Before 2013), right (after 2013)**
-![Figure 18](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Southwest%20Assault%20Pie%20.png) 
 
 Which premises contained the most crime and what crimes affected them the most?
 
