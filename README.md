@@ -41,7 +41,7 @@ The variables 'Date Occurred' and 'Time Occurred' in the original dataframe were
 # Exploratory Data Analysis 
 
 Find the following work here [EDA](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/EDA)
-The processed dataframe can be found here: [final data frame](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering/Final_Partitioned_DataFrame).
+The dataframe used for this section can be found here: [final data frame](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering/Final_Partitioned_DataFrame).
 
 The final cleaned and engineered dataframe contained the following variables with their descriptions: 
 
@@ -178,55 +178,44 @@ From the above graph it can be seen that 12PM and 6PM-8PM are the peak crime tim
 
 ## Machine Learning
 
-Machine learning model was built to predict ‘Assault’ and ‘Robbery and Theft’ in the districts with rising crime: Hollenbeck, Central, Olympic, and Newton. 
+Find the following work here [Machine Learning](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Machine%20Learning/Capstone_Project_1-Machine%20Learning%20.ipynb)
+The dataframe used for this section can be found here: [final data frame](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering/Final_Partitioned_DataFrame).
 
-Model was built on the following features: 
-Crime               219521 non-null int64
-Month_sin           219521 non-null float64
-Month_cos           219521 non-null float64
-Latitude            219521 non-null float64
-Longitude           219521 non-null float64
-Min_sin             219521 non-null float64
-Min_cos             219521 non-null float64
-Victim Age          219521 non-null float64
-Hour_sin            219521 non-null float64
-Hour_cos            219521 non-null float64
-Victim Descent_-    219521 non-null uint8
-Victim Descent_A    219521 non-null uint8
-Victim Descent_B    219521 non-null uint8
-Victim Descent_C    219521 non-null uint8
-Victim Descent_D    219521 non-null uint8
-Victim Descent_F    219521 non-null uint8
-Victim Descent_G    219521 non-null uint8
-Victim Descent_H    219521 non-null uint8
-Victim Descent_I    219521 non-null uint8
-Victim Descent_J    219521 non-null uint8
-Victim Descent_K    219521 non-null uint8
-Victim Descent_L    219521 non-null uint8
-Victim Descent_O    219521 non-null uint8
-Victim Descent_P    219521 non-null uint8
-Victim Descent_S    219521 non-null uint8
-Victim Descent_U    219521 non-null uint8
-Victim Descent_V    219521 non-null uint8
-Victim Descent_W    219521 non-null uint8
-Victim Descent_X    219521 non-null uint8
-Victim Descent_Z    219521 non-null uint8
-Victim Sex_-        219521 non-null uint8
-Victim Sex_F        219521 non-null uint8
-Victim Sex_H        219521 non-null uint8
-Victim Sex_M        219521 non-null uint8
-Victim Sex_N        219521 non-null uint8
-Victim Sex_X        219521 non-null uint8
+Prior to building a machine learning model, missing variables in the 'Victim Sex', 'Victim Descent' and 'Victim Age' (previously labeled as 'Missing') were dropped. Additionally,'Victim Sex', 'Victim Descent' and 'Premise Description' variables were converted to categorical types.The 'Location' variable was split into two variables: 'Longitude' and 'Latitude'.
 
-Best model was XBClasssifier with accuracy of 72% 
+Additional EDA was performed in this section on 'Victim Age', 'Victim Sex', 'Minute', 'Hour' and 'Month' variables and can be viewed in the [Machine Learning](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Machine%20Learning/Capstone_Project_1-Machine%20Learning%20.ipynb) section notebook of this repository.
+
+The based on EDA, the variables that were chosen to utilize for machine learning studies were: 
+
+- Crime - classification label
+- Latitude
+- Longitude
+- Min_sin
+- Min_cos
+- Victim Age
+- Hour_sin
+- Hour_cos
+- Victim Sex - segmented into dummy variables 
+- Victim Descent - segmented into dummy variables 
+
+The dataframe for machine learning consisting of the above variables was limited to the 5 focus districs and the two most concerning crimes: 'Robbery and Theft' and 'Assault'. The unbalanced, binary variable 'Crime' was then balanced.
+
+Multiple machine learning models were fit: DecisionTreeClassifier, ExtraTreesClassifier, MLPClassifier, AdaBoostClassifier, RandomForestClassifier, and XGBClassifier. Accuracies ranged from ~50-70 %. AdaBoostClassifier and XGBClassifier showed the best performance. XGBClassifier was chosen as the final model for the higher score in accuracy. Hyperparameter tunning resulted in the following parameters: 
+
+- n_estimators: 40-150 (values from 40 to 150 yeilded essentially the same result) 
+- max_depth: 10
+- subsample: .8
+
+The model with the stated parameters yeilded an ROC score of ~73 % with the the ROC curve below: 
+
+[!Figure 26](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Images/ROC%20curve%20.png)
+
+To further imporve accuracy of the model addition of more descriptive features might be necessary. This can be accomplished by merging the original dataframe with additional datatables. This will be the future work. 
 
 
 
 
 
-
-
-ROC score 74 % 
 
  
 
