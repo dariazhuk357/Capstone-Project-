@@ -95,22 +95,7 @@ What kind of crimes populated the two most dangerous districts in LA?
 
 What were the main sub-categories of ‘Robbery and Theft’ in each of the focus districts? Crime in those districts began to spike after 2013. Did some of those sub-categories grow after 2013? 
 
-**Central district, Robbery and Theft - left (Before 2013), right (after 2013)**
-![Figure 5](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Central%20Robbery%20Pie.png)
-
-**Hollenbeck district, Robbery and Theft - left (Before 2013), right (after 2013)**
-![Figure 6](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollenbeck%20Robbery%20Pie.png)
-
-**Newton district, Robbery and Theft - left (Before 2013), right (after 2013)**
-![Figure 7](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Newton%20Robbery%20Pie.png)
-
-**Olympic district, Robbery and Theft - left (Before 2013), right (after 2013)**
-![Figure 8](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Olympic%20Robbery%20Pie.png)
-
-**Hollywood district, Robbery and Theft - left (Before 2013), right (after 2013)**
-![Figure 9](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Hollywood%20Robbery%20Pie.png)
-
-All districts seemed to have an increase in ‘Theft/Burglary From a Vehicle’, but overall showed no specific crime rise in the sub-categories of ‘Robbery and Theft’. 
+All districts seemed to have an increase in ‘Theft/Burglary From a Vehicle’, but overall showed no specific crime rise in the sub-categories of ‘Robbery and Theft’. See the images here. 
 
 What about ‘Assault’? 
  
