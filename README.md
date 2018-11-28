@@ -122,6 +122,10 @@ What times are peak times of crime for the focus districts?
 
 From the above graph it can be seen that 12PM and 6PM-8PM are the peak crime times in almost all the focus districst and the two most dangerous districts in LA. 
 
+Which victim descents were affected the most by which crime? 
+
+
+
 
 ## Machine Learning
 
