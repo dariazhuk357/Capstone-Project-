@@ -124,8 +124,7 @@ From the above graph it can be seen that 12PM and 6PM-8PM are the peak crime tim
 
 Which victim descents were affected the most by which crime? 
 
-
-
+![Figure 26](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Images/Victim%20Descent%20Trend%20.png)
 
 ## Machine Learning
 
@@ -159,17 +158,6 @@ Multiple machine learning models were fit: DecisionTreeClassifier, ExtraTreesCla
 
 The model with the stated parameters yeilded an ROC score of ~73 % with the the ROC curve below: 
 
-![Figure 26](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Images/ROC%20curve%20.png)
+![Figure 27](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Images/ROC%20curve%20.png)
 
 To further imporve accuracy of the model addition of more descriptive features might be necessary. This can be accomplished by merging the original dataframe with additional datatables. This will be the future work. 
-
-
-
-
-
-
- 
-
-
-
-
