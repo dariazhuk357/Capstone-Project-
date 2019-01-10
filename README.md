@@ -40,7 +40,7 @@ The variables 'Date Occurred' and 'Time Occurred' in the original dataframe were
 
 # Exploratory Data Analysis 
 
-Find the following work here [EDA](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/EDA)
+Find the following work here: [EDA](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/EDA)
 The dataframe used for this section can be found here: [final data frame](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering/Final_Partitioned_DataFrame).
 
 The final cleaned and engineered dataframe contained the following variables with their descriptions: 
@@ -73,7 +73,7 @@ The final cleaned and engineered dataframe contained the following variables wit
 
 ### Yearly Crime Trends
 
-Yearly crime trends were examined for all the districts contained in the dataset
+Yearly crime trends were examined for all the districts contained in the dataset.
 
 ![Figure 1](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/LA%20Crime%20Rate%20by%20District.png)
 
@@ -91,7 +91,7 @@ What kind of crimes populated the two most dangerous districts in LA?
 
 ![Figure 4](https://github.com/dariazhuk357/Capstone_Project_1/blob/master/Images/Detailed%20Crime%20Count%201.png)
 
-‘Robbery and Theft’ and ‘Assault’ were the biggest contributors in all focus districs, with ‘Sex-Related Crime’ in third place. Moreover, the trend in ‘Robbery and Theft’ and ‘Assault’ crimes mimicked the overall crime rise trend, signifying that those two crime categories could be the main drivers of crime rise. 
+‘Robbery and Theft’ and ‘Assault’ were the biggest contributors in all focus districts, with ‘Sex-Related Crime’ in third place. Moreover, the trend in ‘Robbery and Theft’ and ‘Assault’ crimes mimicked the overall crime rise trend, signifying that those two crime categories could be the main drivers of increases in crime. 
 
 What were the main sub-categories of ‘Robbery and Theft’ in each of the focus districts? Crime in those districts began to spike after 2013. Did some of those sub-categories grow after 2013? 
 
@@ -128,7 +128,7 @@ Which victim descents were affected the most by which crime?
 
 ## Machine Learning
 
-Find the following work here [Machine Learning](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Machine%20Learning/Capstone_Project_1-Machine%20Learning%20.ipynb)
+Find the following work here: [Machine Learning](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Machine%20Learning/Capstone_Project_1-Machine%20Learning%20.ipynb)
 The dataframe used for this section can be found here: [final data frame](https://github.com/dariazhuk357/Capstone_Project_1/tree/master/Feature%20Engineering/Final_Partitioned_DataFrame).
 
 Prior to building a machine learning model, missing variables in the 'Victim Sex', 'Victim Descent' and 'Victim Age' (previously labeled as 'Missing') were dropped. Additionally,'Victim Sex', 'Victim Descent' and 'Premise Description' variables were converted to categorical types.The 'Location' variable was split into two variables: 'Longitude' and 'Latitude'.
@@ -160,4 +160,4 @@ The model with the stated parameters yeilded an ROC score of ~73 % with the the 
 
 ![Figure 27](https://github.com/dariazhuk357/Crime-in-Los-Angeles/blob/master/Images/ROC%20curve%20.png)
 
-To further imporve accuracy of the model addition of more descriptive features might be necessary. This can be accomplished by merging the original dataframe with additional datatables. This will be the future work. 
+To further imporve accuracy of the model, the addition of more descriptive features might be necessary. This can be accomplished by merging the original dataframe with additional datatables. This will be the direction of future work. 
